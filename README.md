@@ -22,8 +22,8 @@ probability that we are going to win.
 
 I ended up with a neural network with 37 inputs (features) and one hidden layer of 30 neurons. Two hidden layers did not give better results.
 
-I started with a simple algorithm to select which move to play: simulate every possible move we can play, feed the resulting
-position in the neural network, and play the move that returns the highest probability to win according to the net.
+I started with a simple algorithm to select which move to play: simulate every possible move we can play, calculate the fingerprint of the resulting
+position and feed it to the neural network, and play the move that returns the highest probability to win according to the net.
 
 The learning algorithm is also simple:
 
